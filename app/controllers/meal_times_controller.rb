@@ -1,6 +1,6 @@
 class MealTimesController < ApplicationController
     def index
-        @meal_times = MealTimes.all 
+        @meal_times = MealTime.all 
         render json: @meal_times, status:200
     end 
 

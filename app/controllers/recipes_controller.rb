@@ -1,11 +1,11 @@
 class RecipesController < ApplicationController
     def index
-        @recipes = Recipes.all 
+        @recipes = Recipe.all 
         render json: @recipes, status:200
     end 
 
     def show 
-        @recipe = recipe.find(params[id])
+        @recipe = Recipe.find(params[id])
         render json: @recipe, status:200
     end 
 end
